@@ -1,0 +1,34 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "sharp": "npm install --arch=x64 --platform=linux --libc=glibc sharp",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@element-plus/nuxt": "^1.0.6",
+    "@nuxt/devtools": "latest",
+    "@nuxt/image": "^1.0.0",
+    "@types/nprogress": "^0.2.2",
+    "nuxt": "^3.8.0",
+    "nuxt-icons": "^3.2.1",
+    "sass": "^1.69.4",
+    "sass-loader": "^13.3.2",
+    "vue": "^3.3.7",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^7.0.1",
+    "@pinia/nuxt": "^0.5.1",
+    "ali-oss": "^6.18.1",
+    "dayjs": "^1.11.10",
+    "element-plus": "^2.4.1",
+    "html2canvas": "^1.4.1",
+    "nprogress": "^0.2.0"
+  }
+}

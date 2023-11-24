@@ -1,0 +1,93 @@
+/* ========== ========== */
+body {
+    // background-color: #F4F6FA;
+    color: $font_color;
+    font-family: rb-regular;
+}
+body,
+h1, h2, h3, h4, h5, h6,
+dl, dd,
+p{
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6,
+b{
+    font-weight: normal;
+}
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+i,
+em{
+    font-style: normal;
+}
+a{
+    color: $font_color;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+/* table */
+table{ 
+    border-collapse: collapse; 
+    border-spacing: 0; 
+}
+th,td{ 
+    padding: 0; 
+}
+/*
+* 图片样式
+*/
+img
+{
+    display: inline-block;
+    border: none;
+    vertical-align: middle;
+}
+/* 去除苹果手机按钮默认样式 */
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button
+{
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+}
+input {
+    outline: none;
+}
+.anticon {
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+// 修改表格中排序只能点图表不能点表头进行排序
+.el-table {
+    .cell {
+        padding: 0 !important;
+    }
+    thead {
+        th {
+            pointer-events: none;
+      
+            i {
+                pointer-events: auto;
+            }
+        }
+        .cell {
+            white-space: nowrap;
+        }
+    }
+    .rowClick {
+        cursor: pointer;
+    }
+    th.el-table__cell.is-sortable {
+        cursor: revert;
+    }
+    .sort-caret {
+        left: 2px;
+    }
+}
