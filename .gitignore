@@ -1,8 +1,8 @@
 # vscode
 .vscode
 # Nuxt dev/build outputs
-.output
-.output.*
+*/.output
+*/.output.*
 .data
 .nuxt
 .nitro

@@ -28,6 +28,12 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' }
   },
   nitro: {
+    // build打包输出位置，
+    output: {
+      dir: './output/.output',
+      // serverDir: './output/.output/server',
+      // publicDir: './output/.output/public'
+    },
     // https://nitro.unjs.io/config
     devProxy: {
       [`${ API_HOST }`]: {
